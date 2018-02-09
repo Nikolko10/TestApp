@@ -27,9 +27,9 @@ class App extends Component {
   popUpCreateColl() {
     return <div style={{display: 'none'}} className="popUpColl">
         <div>
-          <p>Input time</p>
+          <p>Enter time</p>
           <input type='text' ref='time' />
-          <p>Input note</p>
+          <p>Enter note</p>
           <textarea ref='note' rows='5'></textarea><br/>
             <button className='add' onClick={() => this.add(this.refs.time.value, this.refs.note.value)}>Add</button>
           <button onClick={this.showModal}>Cansel</button>
